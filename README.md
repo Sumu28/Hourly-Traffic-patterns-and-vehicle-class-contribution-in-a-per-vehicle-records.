@@ -6,18 +6,49 @@ Roadside sensors on Ireland's roads record every vehicle that passes. That produ
 
 This project takes one full day of raw per-vehicle detections from Transport Infrastructure Ireland (TII), cleans it up, and answers that question with a single chart.
 
-> Group project for a Data Visualisation module at Dublin City University, done with **Kavya Kumar**.
+> Group project for a Data Visualisation module at Dublin City University, done with **Kavya Kumar**. *(Add the module code if you want to name it.)*
 
 ---
 
-## The answer
+## Results
 
-- **Busiest hour: 12:00 (noon), with 398,415 vehicle detections.**
-- **Cars drove the peak**, with vans and light goods vehicles (LGVs) a distant second. Heavy goods vehicles stayed fairly steady through the day.
-- **Quietest period: the early hours**, with traffic at its lowest around 3 a.m. (26,486 detections in that hour).
+**The short answer:** traffic peaks at **12:00 (noon)**, and **cars** drive that peak.
 
+*(Add your final chart image here. It is the most useful thing in this README.)*
 
----
+### When is traffic busiest?
+
+Traffic is at its lowest in the small hours, climbs steeply through the morning, peaks at noon, then eases off slowly through the afternoon and evening.
+
+| Hour | Vehicle detections |
+|---|---|
+| 00:00 | 60,677 |
+| 01:00 | 38,685 |
+| 02:00 | 27,831 |
+| 03:00 | 26,486 (quietest of the hours above) |
+| 04:00 | 33,118 |
+| **12:00** | **398,415 (peak)** |
+
+From the final chart, traffic stays high through the afternoon, still around 300,000 an hour at 18:00, before dropping to roughly 75,000 by 23:00. *(These afternoon and evening figures are read from the chart, so replace them with exact values from the notebook if you want precision.)*
+
+### Who is driving it?
+
+Ranked by total detections across the day:
+
+1. Car
+2. Van / LGV
+3. Articulated HGV
+4. Rigid HGV
+5. Motorcycle
+6. Multi-Axle HGV
+7. Bus / Minibus
+8. Unclassified
+
+- **Cars dominate everything.** They make up the large majority of detections, and they are the largest class at the noon peak. Vans and light goods vehicles come second, well behind.
+- **Heavy goods vehicles barely move.** Their lines stay almost flat while total traffic swings by hundreds of thousands, so they are not what causes the peak.
+- **Heavy vehicles matter more at night.** At midnight, cars made up 51,572 of the 60,677 detections (about 85%), and the three HGV classes together made up about 7%. Their share is highest when everything else is quiet.
+
+The takeaway: the daily peak is caused by ordinary private cars, with light commercial vehicles second, and not by freight.
 
 ## The data
 
