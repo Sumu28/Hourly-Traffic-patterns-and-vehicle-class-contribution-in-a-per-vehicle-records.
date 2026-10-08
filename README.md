@@ -6,15 +6,12 @@ Roadside sensors on Ireland's roads record every vehicle that passes. That produ
 
 This project takes one full day of raw per-vehicle detections from Transport Infrastructure Ireland (TII), cleans it up, and answers that question with a single chart.
 
-> Group project for a Data Visualisation module at Dublin City University, done with **Kavya Kumar**. *(Add the module code if you want to name it.)*
-
+> Group project for a Data Visualisation module at Dublin City University, done with **Kavya Kumar**. 
 ---
 
 ## Results
 
 **The short answer:** traffic peaks at **12:00 (noon)**, and **cars** drive that peak.
-
-*(Add your final chart image here. It is the most useful thing in this README.)*
 
 ### When is traffic busiest?
 
